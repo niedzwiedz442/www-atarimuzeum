@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./font.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #32cc33;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  font-family: SystemFont;
+  border-bottom: 3px solid black;
+  padding: 5px;
+}
+
+content {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+content nav {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 11%;
+}
+content nav a {
+  margin: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+content nav a:hover {
+  color: white;
+  background-color: black;
+}
+content nav a:hover h3 {
+  background-color: black;
+}
+content nav a:active {
+  color: lightgray;
+}
+content nav h3 {
+  font-family: SystemFont;
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 1px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+content main {
+  width: 76%;
+  padding: 10px;
+}
+content main header {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  border: 3px solid black;
+}
+content main article {
+  width: 40%;
+  background-color: white;
+  border: 3px solid black;
+  margin: 10px auto 10px auto;
+}
+content main article img{
+  width: 100%;
+  padding: 5px;
+}
+content main article h2 {
+  font-family: SystemFont;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  background-color: rgb(209, 209, 209);
+  padding: 2px;
+}
+content main article p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+content main article i {
+  padding: 5px;
+}
+content main article b {
+  font-size: 1.5em;
+}
+content main article b a {
+  color: #fe4d01;
+}
+content main article b a:hover {
+  background-color: black;
+  padding: 1px;
+}
+#kontakt-title {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+content aside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 13%;
+  padding-right: 10px;
+  font-family: SystemFont;
+}
+content aside figure {
+  background-color: white;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+content aside figure a {
+  color: blue;
+  font-family: SystemFont;
+}
+content aside figure a:hover {
+  color: rgb(120, 120, 255);
+}
+
+footer {
+  text-align: center;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+  font-family: "Poppins", sans-serif;
+}
+footer p {
+  background-color: white;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 2px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+form label {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+form textarea{
+  width: 75%;
+  resize: vertical;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+}
+form input {
+  border: 2px solid black;
+  background-color: white;
+  background: none;
+  padding: 3px;
+  width: 65%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+}
+form #plik{
+  border: none;
+}
+
+@media screen and (max-width: 1500px) {
+  content nav {
+    width: 15%;
+  }
+  content main {
+    width: 70%;
+  }
+  content main header {
+    width: 60%;
+  }
+  content main article {
+    width: 50%;
+  }
+  content aside {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  content nav {
+    width: 20%;
+  }
+  content main {
+    width: 60%;
+  }
+  content main header {
+    width: 75%;
+  }
+  content main article {
+    width: 65%;
+  }
+  content aside {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  content nav {
+    font-size: 0.9em;
+    width: 18%;
+  }
+  content nav img {
+    transform: scale(0.9);
+  }
+  content main {
+    width: 62%;
+  }
+  content main header {
+    width: 90%;
+  }
+  content main article {
+    width: 80%;
+  }
+  content aside {
+    width: 20%;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  content nav {
+    width: 25%;
+  }
+  content main {
+    width: 75%;
+  }
+  content main header {
+    width: 95%;
+  }
+  content main article {
+    width: 90%;
+  }
+  content aside {
+    display: none;
+  }
+}
